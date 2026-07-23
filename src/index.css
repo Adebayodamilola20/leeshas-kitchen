@@ -404,12 +404,12 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 /* ---------- Apps section (dark) ---------- */
 .apps { background: var(--dark); color: #fff; border-radius: 40px; margin: 0 14px; overflow: hidden; position: relative; }
-.apps-inner { position: relative; z-index: 2; padding: 96px 0 0; }
+.apps-inner { position: relative; z-index: 2; padding: 96px 26px 0; }
 .apps-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: center; }
 
 /* Compact variant used on the home page — no more conveyor + phone. */
 .apps-compact { margin: 0 14px 40px; padding-bottom: 56px; }
-.apps-compact .apps-inner { padding: 64px 0 0; }
+.apps-compact .apps-inner { padding: 64px 26px 0; }
 .apps-compact .apps-grid { align-items: center; gap: 48px; }
 .eyebrow-light { color: rgba(255,255,255,0.7); margin-bottom: 12px; }
 .eyebrow-light .dot { background: var(--lav); }
