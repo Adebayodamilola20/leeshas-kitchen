@@ -99,7 +99,11 @@ export default function Gallery() {
         {previous !== null && (
           <motion.div
             className="destgal-img destgal-img-over"
-            style={{ maskImage, WebkitMaskImage: maskImage }}
+            style={
+              isMobile
+                ? { opacity: progress } // mobile: plain crossfade (progress 1 → 0)
+                : { maskImage, WebkitMaskImage: maskImage }
+            }
           >
             <motion.img
               key={`o-${previous}`}

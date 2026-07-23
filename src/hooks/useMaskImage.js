@@ -20,7 +20,12 @@ export default function useMaskImage(localProgress, isMobile, config) {
   return useTransform(localProgress, (latest) => {
     if (typeof isMobile !== 'boolean') return ''
     if (isMobile) {
-      return `linear-gradient(to top,rgba(0,0,0,0) 0%,rgba(0,0,0,0) ${latest * 100}% ,rgba(0,0,0,1) ${latest * 100}%,rgba(1,1,1,1) 100%)`
+      // Mobile browsers handle animated mask-image poorly — the old strip/wipe
+      // math here masked the photo down to nothing at the end of the scroll,
+      // so dishes blanked out to a dark screen. On mobile we skip masking
+      // entirely (fully-opaque mask = image always fully visible) and let the
+      // consuming component do a plain opacity crossfade instead.
+      return 'linear-gradient(rgba(0,0,0,1),rgba(0,0,0,1))'
     }
     let temp = ''
     for (let i = 0; i < divisions; i++) {
