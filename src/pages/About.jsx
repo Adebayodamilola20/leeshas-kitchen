@@ -91,7 +91,7 @@ export default function About() {
       <section className="about-work">
         <video
           className="about-work-video"
-          src="/videos/kitchen-3.mov"
+          src="/videos/kitchen-3.mp4"
           autoPlay
           muted
           loop

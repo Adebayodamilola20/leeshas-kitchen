@@ -14,7 +14,7 @@ export default function CTA() {
     <section className="flowing" id="contact-preview">
       <video
         className="flowing-video"
-        src="/videos/kitchen-2.mov"
+        src="/videos/kitchen-2.mp4"
         autoPlay
         muted
         loop

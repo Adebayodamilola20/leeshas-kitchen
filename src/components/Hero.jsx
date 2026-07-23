@@ -67,7 +67,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
             >
-              <img src="/dishes/dish-3.jpg" alt="Yam porridge with grilled fish and pepper sauce" />
+              <img src="/dishes/dish-3.jpg" alt="Yam porridge with grilled fish and pepper sauce" fetchPriority="high" decoding="async" />
               <span className="hero-lead-tag">Today’s special · Yam porridge</span>
             </motion.div>
 

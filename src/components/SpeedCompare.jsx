@@ -47,7 +47,7 @@ export default function SpeedCompare() {
           <div className="speed-scene">
             <video
               className="speed-scene-video"
-              src="/videos/kitchen-1.mov"
+              src="/videos/kitchen-1.mp4"
               autoPlay
               muted
               loop
