@@ -33,27 +33,34 @@ import { Icon } from './Icons'
 const dishes = [
   {
     number: '01',
+    title: 'Peppered Chicken Jollof',
+    subtitle: 'On the menu this week',
+    body: 'Party jollof cooked with vegetables and sweetcorn, crowned with smoky, pepper-glazed chicken — the tray everyone reaches for first.',
+    src: '/dishes/dish-jollof.jpg',
+  },
+  {
+    number: '02',
     title: 'Small Chops Platter',
     subtitle: 'For the whole room',
     body: 'Puff-puff, chin chin, samosa, spring rolls, peppered gizzard, and salad — the party trays that keep a room full and happy.',
     src: '/dishes/dish-1.jpg',
   },
   {
-    number: '02',
+    number: '03',
     title: 'Efo Riro',
     subtitle: 'Sunday, delivered',
     body: 'A deep, red-hot pot of vegetable soup with assorted meats, cooked low so the leaves keep every bit of colour.',
     src: '/dishes/dish-2.jpg',
   },
   {
-    number: '03',
+    number: '04',
     title: 'Yam Porridge',
     subtitle: 'Warm and generous',
     body: 'Cubed yam simmered in a pepper base with grilled fish and greens — one bowl that eats like the whole meal.',
     src: '/dishes/dish-3.jpg',
   },
   {
-    number: '04',
+    number: '05',
     title: 'Signature Ofada',
     subtitle: 'The house special',
     body: 'Ofada rice with the assorted ayamase, packed by the container. Small for one, family portion for the flat.',
